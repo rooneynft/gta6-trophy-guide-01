@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title-block">
+    <h1>LEONIDA PLATINUM</h1>
+    <p class="subtitle">GTA VI trophy guide &amp; tracker — 55 trophies · roadmap + missable · offline</p>
+  </div>
+  <div class="progress-block" id="progressBlock">
+    <div class="pct" id="progressPct">0%</div>
+    <div class="progress-meta">
+      <div id="progressCount">0 / 55 earned</div>
+      <div class="bar"><div class="bar-fill" id="progressBar"></div></div>
+      <div class="grade-counts" id="gradeCounts"></div>
+    </div>
+  </div>
+</header>
+
+<section class="audit" id="auditStrip" aria-label="Citation audit">
+  <span class="audit-item"><b id="auditCited">–</b> claims cited</span>
+  <span class="audit-item"><b id="auditTwo">–</b> backed by 2+ sources</span>
+  <span class="audit-item"><b id="auditSites">–</b> sites read</span>
+  <span class="audit-item"><b id="auditDisputes">–</b> disputes shown both ways</span>
+  <span class="audit-item"><b id="auditUnconfirmed">–</b> methods still unconfirmed</span>
+  <span class="audit-note">Every claim numbered &amp; cited. Sources read 21 Nov 2026.</span>
+</section>
+
+<nav class="toolbar">
+  <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <div class="chips" id="filters"></div>
+  <label class="check"><input type="checkbox" id="onlyMissable"> Hanya missable</label>
+  <label class="check"><input type="checkbox" id="spoilerToggle"> Hide story spoilers</label>
+  <span class="spacer"></span>
+  <button id="exportBtn" type="button">Export</button>
+  <button id="importBtn" type="button">Import</button>
+  <input id="importFile" type="file" accept="application/json" hidden>
+  <button id="resetBtn" type="button">Reset</button>
+</nav>
+
+<nav class="tabs">
+  <button id="tabTracker" type="button" class="tab active">Tracker</button>
+  <button id="tabRoadmap" type="button" class="tab">Roadmap to Platinum</button>
+  <button id="tabSources" type="button" class="tab">Sources &amp; Method</button>
+</nav>
+
+<main>
+  <section id="trackerView">
+    <ol class="roadmap-strip" id="roadmapStrip"></ol>
+    <div class="tracker-grid">
+      <div class="list-col">
+        <p class="result-count" id="resultCount"></p>
+        <ul class="trophy-list" id="list"></ul>
+      </div>
+      <article class="detail" id="detail" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="roadmapView" hidden>
+    <p class="view-intro">Play the stages in order. Stage 1 first: the story trophies, with the one missable trophy protected in Chapter 1. The 100% checklist only opens after the credits.</p>
+    <ol class="stages" id="roadmapList"></ol>
+  </section>
+
+  <section id="sourcesView" hidden>
+    <h2>Sources &amp; method</h2>
+    <p class="view-intro">Every claim in this guide is numbered and cited to a guide page read on 21 Nov 2026. Names, descriptions and grades are the official PlayStation list, reproduced identically by the guides below. Where guides disagree, the dispute panel on the trophy shows both versions and our call. Nothing here is copied: every guide is written in our own words from the cited facts. One more disagreement: most guides count 28 hidden trophies, but Push Square marks 27 (noted by Sixshore) — our hidden set follows the 28-count majority.</p>
+    <h3>Disputes we show both ways</h3>
+    <ul class="dispute-list" id="disputeList"></ul>
+    <h3>All sources read</h3>
+    <table class="sources-table">
+      <thead><tr><th>Site</th><th>Link</th><th>Read</th><th>Claims cited</th></tr></thead>
+      <tbody id="sourcesTable"></tbody>
+    </table>
+    <p class="fineprint">Game released 19 Nov 2026; the full list went public 18 Nov 2026. Five methods are still unconfirmed across all guides (In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin) — those guides show the description and the best lead only, no invented steps. No Rockstar logo or official artwork is used anywhere in this guide.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Platinum — an unofficial fan guide. GTA VI, Grand Theft Auto and Rockstar Games are trademarks of their owners; this guide is not affiliated with or endorsed by them. Works fully offline; progress is saved in your browser only.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
